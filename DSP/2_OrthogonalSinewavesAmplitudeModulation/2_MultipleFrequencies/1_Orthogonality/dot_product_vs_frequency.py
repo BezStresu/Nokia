@@ -2,13 +2,13 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 t = np.linspace(0, 2*np.pi,30, endpoint=False)
-sin_blue  = np.sin(t)
+cos_blue  = np.cos(t)
 
 dot_l = list()
 freq_l = np.linspace(0, 3, 100)
 for freq in freq_l:    
-    sin_green = np.sin(t*freq)
-    dot_l.append(np.dot(sin_blue, sin_green))
+    cos_green = np.cos(t*freq)
+    dot_l.append(np.dot(cos_blue, cos_green))
     
 plt.plot(freq_l, dot_l)
 plt.axhline(y=0,color='black')

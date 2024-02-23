@@ -20,7 +20,7 @@ def my_stem_plot(y,title,y_range=None):
 #----------------------------
 
 SAMPLE_NR = 10
-FREQ = 1
+FREQ = 4
 
 t = np.linspace(0, 2*np.pi, SAMPLE_NR, endpoint=False)
 

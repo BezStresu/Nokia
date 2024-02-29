@@ -19,12 +19,12 @@ def my_stem_plot(y,title,y_range=None):
     
 def myDFT(samples):
     N = len(samples)
-    dft = list()
+    t = np.linspace(0, 2*np.pi, N, endpoint=False)
+    real = list()
+    imag = list()
     for f in range(N):
-        dft.append(np.dot(samples, np.exp(-2j * np.pi * f * np.arange(N) / N)))   
-        
-    real = np.real(dft)
-    imag = np.imag(dft)
+        real.append(np.dot(samples, np.cos(t*f)))
+        imag.append(np.dot(samples, np.sin(t*f)))
    
     return real, imag
     

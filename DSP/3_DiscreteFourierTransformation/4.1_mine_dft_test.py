@@ -6,7 +6,7 @@ SAMPLE_NR = 10
 SIN_FREQ = 3 
 
 t = np.linspace(0, 2*np.pi, SAMPLE_NR, endpoint=False) 
-samples =  np.sin(t*SIN_FREQ)
+samples =  np.cos(t*SIN_FREQ)
 my_stem_plot(samples,f'samples, f_sig={SIN_FREQ}', y_range=(-6,7))
 
 real, imag = myDFT(samples)

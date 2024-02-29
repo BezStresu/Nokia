@@ -4,7 +4,7 @@ save_data_on_exit = True
 save_history = True
 save_non_project_files = False
 project_type = 'empty-project-type'
-recent_files = ['2_OrthogonalSinewavesAmplitudeModulation\\2_MultipleFrequencies\\1_Orthogonality\\dot_product_vs_frequency.py']
+recent_files = ['3_DiscreteFourierTransformation\\mylib.py', '3_DiscreteFourierTransformation\\6_dtfm.py']
 
 [main]
 version = 0.2.0
